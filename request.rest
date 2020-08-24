@@ -1,0 +1,86 @@
+GET http://localhost:3000/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluZ0BtYWlsLmV4IiwidXNlcklkIjoiNWYzYzllZjA2MGIyZDc0ZDYwOTMzMjJiIiwiaWF0IjoxNTk4MjQ1MjczLCJleHAiOjE1OTgyNDg4NzN9.70ogeIHGuWHquyL3MpDBHt1y9vDBbjBNPyL9hu1YTkk
+
+###
+GET http://localhost:3000/orders
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluZ0BtYWlsLmV4IiwidXNlcklkIjoiNWYzYzllZjA2MGIyZDc0ZDYwOTMzMjJiIiwiaWF0IjoxNTk4MjQ1MjczLCJleHAiOjE1OTgyNDg4NzN9.70ogeIHGuWHquyL3MpDBHt1y9vDBbjBNPyL9hu1YTkk
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluZ0BtYWlsLmV4IiwidXNlcklkIjoiNWYzYzllZjA2MGIyZDc0ZDYwOTMzMjJiIiwiaWF0IjoxNTk3ODE5MDAzLCJleHAiOjE1OTc4MjI2MDN9.K6p7pJGLKQYg66axMc04ebsUoJkZlD9cJZCDe-hZVmI
+
+{
+    "name": "Semangka",
+    "price": 10000
+}
+
+###
+POST http://localhost:3000/orders
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluZ0BtYWlsLmV4IiwidXNlcklkIjoiNWYzYzllZjA2MGIyZDc0ZDYwOTMzMjJiIiwiaWF0IjoxNTk4MjQ1MjczLCJleHAiOjE1OTgyNDg4NzN9.70ogeIHGuWHquyL3MpDBHt1y9vDBbjBNPyL9hu1YTkk
+
+{
+    "productId": "5f3bc2b90c63e2124c9e1b10",
+    "quantity": 112
+}
+
+###
+POST http://localhost:3000/users/signup
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluZ0BtYWlsLmV4IiwidXNlcklkIjoiNWYzYzllZjA2MGIyZDc0ZDYwOTMzMjJiIiwiaWF0IjoxNTk3ODE5MDAzLCJleHAiOjE1OTc4MjI2MDN9.K6p7pJGLKQYg66axMc04ebsUoJkZlD9cJZCDe-hZVmI
+
+{
+    "email": "adming@mail.ex",
+    "password": "123"
+}
+
+###
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "email": "adming@mail.ex",
+    "password": "123"
+}
+
+###
+GET http://localhost:3000/products/5f3bc2b90c63e2124c9e1b10
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluZ0BtYWlsLmV4IiwidXNlcklkIjoiNWYzYzllZjA2MGIyZDc0ZDYwOTMzMjJiIiwiaWF0IjoxNTk3ODE5MDAzLCJleHAiOjE1OTc4MjI2MDN9.K6p7pJGLKQYg66axMc04ebsUoJkZlD9cJZCDe-hZVmI
+
+###
+GET http://localhost:3000/orders/5f3b8ee28c554c36f8126c96
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluZ0BtYWlsLmV4IiwidXNlcklkIjoiNWYzYzllZjA2MGIyZDc0ZDYwOTMzMjJiIiwiaWF0IjoxNTk3ODE5MDAzLCJleHAiOjE1OTc4MjI2MDN9.K6p7pJGLKQYg66axMc04ebsUoJkZlD9cJZCDe-hZVmI
+
+###
+PATCH  http://localhost:3000/products/5f3b7b1b71befc4a48530255
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluZ0BtYWlsLmV4IiwidXNlcklkIjoiNWYzYzllZjA2MGIyZDc0ZDYwOTMzMjJiIiwiaWF0IjoxNTk3ODE5MDAzLCJleHAiOjE1OTc4MjI2MDN9.K6p7pJGLKQYg66axMc04ebsUoJkZlD9cJZCDe-hZVmI
+
+{
+    "name": "Jeruk",
+    "price": 15000,
+    "pisang": "yes"
+}
+
+###
+PATCH  http://localhost:3000/orders/5f3b8ee28c554c36f8126c96
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluZ0BtYWlsLmV4IiwidXNlcklkIjoiNWYzYzllZjA2MGIyZDc0ZDYwOTMzMjJiIiwiaWF0IjoxNTk3ODE5MDAzLCJleHAiOjE1OTc4MjI2MDN9.K6p7pJGLKQYg66axMc04ebsUoJkZlD9cJZCDe-hZVmI
+
+{
+    "product": "5f3b7b1b71befc4a48530255",
+    "quantity": 14
+}
+
+###
+DELETE  http://localhost:3000/products/5f3b7b1b71befc4a48530255
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluZ0BtYWlsLmV4IiwidXNlcklkIjoiNWYzYzllZjA2MGIyZDc0ZDYwOTMzMjJiIiwiaWF0IjoxNTk3ODE5MDAzLCJleHAiOjE1OTc4MjI2MDN9.K6p7pJGLKQYg66axMc04ebsUoJkZlD9cJZCDe-hZVmI
+
+###
+DELETE  http://localhost:3000/orders/5f3b9caf191bb836640faf01
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluZ0BtYWlsLmV4IiwidXNlcklkIjoiNWYzYzllZjA2MGIyZDc0ZDYwOTMzMjJiIiwiaWF0IjoxNTk3ODE5MDAzLCJleHAiOjE1OTc4MjI2MDN9.K6p7pJGLKQYg66axMc04ebsUoJkZlD9cJZCDe-hZVmI
+
+###
+DELETE  http://localhost:3000/users/5f3c9352f67d072e148a83b6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluZ0BtYWlsLmV4IiwidXNlcklkIjoiNWYzYzllZjA2MGIyZDc0ZDYwOTMzMjJiIiwiaWF0IjoxNTk3ODE5MDAzLCJleHAiOjE1OTc4MjI2MDN9.K6p7pJGLKQYg66axMc04ebsUoJkZlD9cJZCDe-hZVmI
